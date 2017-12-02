@@ -3,13 +3,13 @@
 Here's a curated list of high quality coding style conventions and standards.
 
 ## [Git](git/Readme.md)
----
+
 - [Some Git rules](git/Readme.md)
 - [Git workflow](git/Readme.md)
 - [Writing good commit messages](git/Readme.md#commit-message-format)
 
 ## [Languages](lang/Readme.md)
----
+
 ### [HTML](lang/html/Readme.md)
 -
 
