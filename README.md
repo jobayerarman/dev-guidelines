@@ -2,24 +2,24 @@
 > While developing a new project is like rolling on a green field for you, maintaining it is a potential dark twisted nightmare for someone else.
 Here's a curated list of high quality coding style conventions and standards.
 
-## [Git](git/Readme.md)
+## [Git](git/git.md)
 
-- [Some Git rules](git/Readme.md)
-- [Git workflow](git/Readme.md)
-- [Writing good commit messages](git/Readme.md#commit-message-format)
+- [Some Git rules](git/git.md)
+- [Git workflow](git/git.md)
+- [Writing good commit messages](git/git.md#commit-message-format)
 
-## [Languages](lang/Readme.md)
+## [Languages](lang/lang.md)
 
-### [HTML](lang/html/Readme.md)
+### [HTML](lang/html/lang.md)
 -
 
-### [CSS](lang/css/Readme.md)
+### [CSS](lang/css/lang.md)
 - 
 
-### [JavaScript](lang/javascript/Readme.md)
+### [JavaScript](lang/javascript/lang.md)
 -
 
-### [PHP](lang/php/Readme.md)
+### [PHP](lang/php/lang.md)
 - 
 
 ---
