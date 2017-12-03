@@ -4,8 +4,8 @@ Here's a curated list of high quality coding style conventions and standards.
 
 ## [Git](git/git.md)
 
-- [Some Git rules](git/git.md)
-- [Git workflow commands](git/git.md#gitflow-commands)
+- [Git rules](git/git.md#git-rules)
+- [Git workflow](git/git.md#git-workflow)
 - [Writing good commit messages](git/git.md#commit-message-format)
 
 ## [Languages](lang/lang.md)
