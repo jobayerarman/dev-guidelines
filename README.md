@@ -2,11 +2,11 @@
 > While developing a new project is like rolling on a green field for you, maintaining it is a potential dark twisted nightmare for someone else.
 Here's a curated list of high quality coding style conventions and standards.
 
-## [Git](git/git.md)
+## [Git](git/README.md)
 
-- [Git rules](git/git.md#git-rules)
-- [Git workflow](git/git.md#git-workflow)
-- [Writing good commit messages](git/git.md#commit-message-format)
+- [Git rules](git/README.md#git-rules)
+- [Git workflow](git/README.md#git-workflow)
+- [Writing good commit messages](git/README.md#commit-message-format)
 
 ## [Languages](lang/lang.md)
 
