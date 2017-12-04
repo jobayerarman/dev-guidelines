@@ -2,32 +2,32 @@
 There are a set of rules to keep in mind:
 
 * Perform work in a `feature` branch.
-    
+
     _Why:_
     >Because this way all work is done in isolation on a dedicated branch rather than the main branch. It allows you to submit multiple pull requests without confusion. You can iterate without polluting the master branch with potentially unstable, unfinished code.
 
 * Branch out from `develop`
-    
+
     _Why:_
     >This way, you can make sure that code in master will almost always build without problems, and can be mostly used directly for releases (this might be overkill for some projects).
 
 * Never push into `develop` or `master` branch. Make a Pull Request.
-    
+
     _Why:_
     > It notifies team members that they have completed a feature. It also enables easy peer-review of the code and dedicates forum for discussing the proposed feature.
 
 * Before making a Pull Request, make sure your `feature` branch builds successfully and passes all tests (including code style checks).
-    
+
     _Why:_
     > You are about to add your code to a stable branch. If your feature-branch tests fail, there is a high chance that your destination branch build will fail too. Additionally, you need to apply code style check before making a Pull Request. It aids readability and reduces the chance of formatting fixes being mingled in with actual changes.
 
 * Protect your `develop` and `master` branch.
-  
+
     _Why:_
     > It protects your production-ready branches from receiving unexpected and irreversible changes.
 
 * Delete local and remote feature branches after merging.
-    
+
     _Why:_
     > It will clutter up your list of branches with dead branches. It insures you only ever merge the branch back into (`master` or `develop`) once. Feature branches should only exist while the work is still in progress.
 
@@ -43,6 +43,55 @@ The overall Git workflow is:
 6. When the `release` branch is done it is merged into `develop` and `master`
 7. If an issue in `master` is detected a `hotfix` branch is created from `master`
 8. Once the hotfix is complete it is merged to both `develop` and `master`
+
+### Feature Development
+#### Steps to Follow:
+1. Start with an updated local development branch -- by checking out the dev branch and pulling changes:
+```bash
+$ git checkout develop
+$ git pull origin develop
+```
+
+2. Create and checkout a feature branch:
+```bash
+$ git checkout -b feature/branch-name
+```
+> *Note: LP convention: Your branch name should start with your feature and then a description of your feature (as above).*
+
+3. Do work in your feature branch, committing early and often:
+```bash
+$ git commit -m "Comment about the commit"
+```
+
+4. Rebase frequently to incorporate upstream changes:
+```bash
+$ git fetch origin development
+$ git rebase origin/development
+```
+- or -
+```bash
+$ git checkout development
+$ git pull
+$ git checkout feature/branch-name
+$ git rebase development
+```
+
+5. Optional: Perform an interactive rebase (squash) your commits before pushing the branch:
+```bash
+$ git fetch origin development
+$ git rebase -i origin/development
+```
+
+6. Once you have reviewed your changes, and verified formatting and intention, push your changes upstream to origin:
+```bash
+$ git push -u origin feature/branch-name
+```
+
+#### Get Your Code Reviewed (by creating a Pull Request)!
+Your code must be reviewed by other developers, and receive +1s from them, in order to be eligible for Merge.
+
+1. Create a Pull Request in github between your feature branch and development.
+2. After your code passes Code Review, merge your code into **Development Branch** via the GitHub interface. Delete your branch after merging.
 
 # Commit Message Format
 
