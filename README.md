@@ -2,11 +2,16 @@
 > While developing a new project is like rolling on a green field for you, maintaining it is a potential dark twisted nightmare for someone else.
 Here's a curated list of high quality coding style conventions and standards.
 
-## [Git](git/git.md)
+## [Git](git/README.md)
 
-- [Some Git rules](git/git.md)
-- [Git workflow](git/git.md)
-- [Writing good commit messages](git/git.md#commit-message-format)
+- [Git Rules](git/README.md#git-rules)
+- [Git Workflow](git/README.md#git-workflow)
+    - [Feature Branch](git/README.md#feature-branch)
+    - [Bugfix Branch](git/README.md#bugfix-branch)
+    - [Release Branch](git/README.md#release-branch)
+    - [Hotfix Branch](git/README.md#hotfix-branch)
+- [Writing Good Commit Messages](git/README.md#commit-message-format)
+- [Gitflow CLI Commands](git/README.md#gitflow-cli-commands)
 
 ## [Languages](lang/lang.md)
 
