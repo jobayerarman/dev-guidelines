@@ -56,7 +56,7 @@ $ git pull origin develop
 ```bash
 $ git checkout -b feature/branch-name
 ```
-> *Note: LP convention: Your branch name should start with your feature and then a description of your feature (as above).*
+> *Note: Your branch name should start with feature and then a description of your feature (as above).*
 
 3. Do work in your feature branch, committing early and often:
 (Use this [guide](#commit-message-format) to write commit message)
@@ -96,12 +96,45 @@ Your code must be reviewed by other developers, and receive +1s from them, in or
 
 ### Bugfix Branch
 #### Steps to Follow:
+1. Start with an updated local development branch -- by checking out the dev branch and pulling changes:
+```bash
+$ git checkout develop
+$ git pull origin develop
+```
+
+2. Create and checkout a bugfix branch:
+```bash
+$ git checkout -b bugfix/branch-name
+```
+> *Note: Your branch name should start with bugfix and then a description of your bug (as above).*
 
 ### Release Branch
 #### Steps to Follow:
+1. Start with an updated local development branch -- by checking out the dev branch and pulling changes:
+```bash
+$ git checkout develop
+$ git pull origin develop
+```
+
+2. Create and checkout a release branch:
+```bash
+$ git checkout -b release/v1.0.0
+```
+> *Note: Your branch name should start with release and then a release version (as above).*
 
 ### Hotfix Branch
 #### Steps to Follow:
+1. Start with an updated local development branch -- by checking out the dev branch and pulling changes:
+```bash
+$ git checkout develop
+$ git pull origin develop
+```
+
+2. Create and checkout a hotfix branch:
+```bash
+$ git checkout -b hotfix/v1.0.1
+```
+> *Note: Your branch name should start with your hotfix and then a hotfix version (as above).*
 
 # Commit Message Format
 
