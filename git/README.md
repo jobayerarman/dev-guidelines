@@ -44,7 +44,7 @@ The overall Git workflow is:
 7. If an issue in `master` is detected a `hotfix` branch is created from `master`
 8. Once the hotfix is complete it is merged to both `develop` and `master`
 
-### Feature Development
+### Feature Branch
 #### Steps to Follow:
 1. Start with an updated local development branch -- by checking out the dev branch and pulling changes:
 ```bash
@@ -59,8 +59,9 @@ $ git checkout -b feature/branch-name
 > *Note: LP convention: Your branch name should start with your feature and then a description of your feature (as above).*
 
 3. Do work in your feature branch, committing early and often:
+(Use this [guide](#commit-message-format) to write commit message)
 ```bash
-$ git commit -m "Comment about the commit"
+$ git commit -m "commit message"
 ```
 
 4. Rebase frequently to incorporate upstream changes:
@@ -92,6 +93,15 @@ Your code must be reviewed by other developers, and receive +1s from them, in or
 
 1. Create a Pull Request in github between your feature branch and development.
 2. After your code passes Code Review, merge your code into **Development Branch** via the GitHub interface. Delete your branch after merging.
+
+### Bugfix Branch
+#### Steps to Follow:
+
+### Release Branch
+#### Steps to Follow:
+
+### Hotfix Branch
+#### Steps to Follow:
 
 # Commit Message Format
 
