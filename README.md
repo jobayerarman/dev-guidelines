@@ -4,13 +4,14 @@ Here's a curated list of high quality coding style conventions and standards.
 
 ## [Git](git/README.md)
 
-- [Git rules](git/README.md#git-rules)
-- [Git workflow](git/README.md#git-workflow)
+- [Git Rules](git/README.md#git-rules)
+- [Git Workflow](git/README.md#git-workflow)
     - [Feature Branch](git/README.md#feature-branch)
     - [Bugfix Branch](git/README.md#bugfix-branch)
     - [Release Branch](git/README.md#release-branch)
     - [Hotfix Branch](git/README.md#hotfix-branch)
-- [Writing good commit messages](git/README.md#commit-message-format)
+- [Writing Good Commit Messages](git/README.md#commit-message-format)
+- [Gitflow CLI Commands](git/README.md#gitflow-cli-commands)
 
 ## [Languages](lang/lang.md)
 
